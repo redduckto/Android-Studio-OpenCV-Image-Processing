@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name"><b>Bodyshape Mobile</b></string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="hint1"><i>height(cm)</i></string>
+    <string name="hint2"><i>weight(kg)</i></string>
+    <string name="process_and_calculate">Process and Calculate</string>
+    <string name="gallery">Gallery</string>
+    <string name="camera">Camera</string>
+    <string name="boy"><i>boy</i></string>
+    <string name="kilo"><i>kilo</i></string>
+    <string name="statistics">How To Use</string>
+    <string name="about">About</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="share_my_type">Share My Type</string>
+
+
+</resources>

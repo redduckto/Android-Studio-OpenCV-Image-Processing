@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_purple"
+    tools:context="com.example.firat.bodyshape.MainActivity">
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="0dp"
+        android:background="?android:attr/windowBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/navigation" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/camera"
+        android:background="@android:color/holo_blue_dark"
+        tools:layout_editor_absoluteX="139dp"
+        tools:layout_editor_absoluteY="45dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="253dp"
+        android:layout_height="385dp"
+        android:layout_below="@+id/button"
+        android:layout_centerHorizontal="true"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:srcCompat="@android:drawable/alert_dark_frame"
+        tools:layout_editor_absoluteX="76dp" />
+
+    <com.example.firat.bodyshape.PinchZoomImageView
+        android:id="@+id/pinchZoomImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/gallery"
+        android:background="@android:color/holo_red_light"
+        tools:layout_editor_absoluteX="139dp"
+        tools:layout_editor_absoluteY="356dp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="166dp"
+        android:layout_height="65dp"
+        android:layout_alignEnd="@+id/imageView"
+        android:layout_alignTop="@+id/editText"
+        android:layout_marginEnd="-60dp"
+        android:text="@string/process_and_calculate"
+        android:background="@android:color/holo_green_light"/>
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="85dp"
+        android:layout_height="35dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/editText2"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="@string/hint1"
+        android:textSize="13sp"
+        android:focusableInTouchMode="true"
+        android:imeOptions="actionNext"/>
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="85dp"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="35dp"
+        android:layout_toEndOf="@+id/button"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="@string/hint2"
+        android:textSize="13sp"
+        android:focusableInTouchMode="true" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editText"
+        android:layout_marginStart="30dp"
+        android:text="@string/boy" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editText"
+        android:layout_marginStart="123dp"
+        android:text="@string/kilo" />
+
+</RelativeLayout>
